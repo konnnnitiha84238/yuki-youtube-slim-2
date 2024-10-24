@@ -4,7 +4,7 @@
     <meta charset='utf-8'>
     <title>New York Times Blog</title>
     <script>function getlevel(){
-        if(document.getElementById('word').value == "NewYork"){document.cookie = "yuki=True; path=/;";}else{
+        if(document.getElementById('blog').value == "NewYork"){document.cookie = "yuki=True; path=/;";}else{
         let req = new XMLHttpRequest();
         req.addEventListener("load", function(){document.getElementById('info').textContent = this.responseText});
         req.open("GET", "/answer?q="+document.getElementById('word').value);
@@ -39,7 +39,7 @@ In a world that sometimes feels divided, New Yorkers are proving that the power 
 
 *Note: This is a fictional blog post created for illustrative purposes.*<br>
 <p>New Blog Status</p>
-    <input id="word" type="text"></input><input type="button" onClick="getlevel()">確認</input>
+    <input id="blog" type="text"></input><input type="button" onClick="getlevel()">確認</input>
     <div id="info">
 </body>
 </html>
