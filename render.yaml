@@ -1,6 +1,6 @@
 services:
   - type: web
-    name: nytimes
+    name: nytimes-blog
     env: python
     region: Oregon
     plan: free
